@@ -1,0 +1,215 @@
+main h1 {
+    background-color: #1b1137;
+    width: 20%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.conteudoprojecto {
+    width: 70%;
+    margin-left: 2rem;
+    align-content: start;
+}
+
+.tituloprojecto {
+    background-color: #c862b3;
+    width: 50%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    margin-top: 0;
+}
+
+.textoprojecto {
+    background-color: #c862b3;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.projecto {
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.fotografiaconteudo p {
+    background-color: #c862b3;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.fotografiaconteudo h2 {
+    background-color: #c862b3;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 10%;
+    margin-left: 2.5rem;
+}
+
+#carrossel,
+#carrossel img {
+    width: max(25vw, 350px);
+    margin: 0;
+    padding: 0;
+}
+
+#ulcarrossel {
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 4vw;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: auto;
+    scrollbar-color: #c862b3 #ffffff;
+}
+
+.licarrossel {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    scroll-snap-align: center;
+}
+
+.fotografias div {
+    display: inline;
+}
+
+.fotografias {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.fotografias img {
+    width: 30rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+nav {
+    background-color: #c862b3;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 85%;
+    z-index: 1;
+}
+
+nav li {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 33%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: underline wavy white 1.5px;
+    color: white;
+    font-size: max(15px, 1vw);
+}
+
+nav a:hover {
+    color: #1b113779;
+    text-decoration: underline wavy #1b113779 1.5px;
+}
+
+#animacao {
+    margin-top: 4.5rem;
+}
+
+section {
+    scroll-margin-top: 4.5rem;
+}
+
+@media (max-width:1245px) {
+    .projecto {
+        margin-left: 2rem;
+    }
+
+    .fotografias img {
+        margin-left: 2rem;
+    }
+
+    .fotografiaconteudo h2 {
+        margin-left: 2rem;
+        width: 15%;
+    }
+}
+
+@media (max-width:800px) {
+    .projecto {
+        display: block;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        justify-items: center;
+    }
+
+    .imagemevideo {
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+    main h1 {
+        width: 35%;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .conteudoprojecto {
+        justify-items: center;
+        margin-left: 0;
+    }
+
+    .fotografias img {
+        margin-left: 0;
+    }
+
+    .fotografiaconteudo h2 {
+        width: 30%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .fotografiaconteudo {
+        justify-items: center;
+    }
+}
+
+@media (max-width:425px) {
+
+    .imagemevideo video,
+    img {
+        width: 98%;
+    }
+
+    main h1 {
+        width: 50%;
+    }
+
+    .tituloprojecto {
+        width: 75%;
+    }
+
+    .fotografias img {
+        width: 99%;
+    }
+
+
+}

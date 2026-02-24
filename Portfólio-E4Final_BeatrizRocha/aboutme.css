@@ -1,0 +1,74 @@
+main h1 {
+    background-color: #1b1137;
+    width: 20%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+#imagemartista img {
+    width: 22rem;
+    border: 2px dashed rgba(0, 0, 0, 0.411);
+}
+
+#aboutme {
+    margin-left: 2rem;
+    width: 96%;
+}
+
+#conteudo {
+    margin-left: 4rem;
+    display: flex;
+}
+
+#info {
+    background-color: #c862b3;
+    padding: 1rem;
+    text-align: justify;
+}
+
+#nome {
+    background-color: #c862b3;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#extra li {
+    margin-left: 0.4rem;
+    display: inline;
+}
+
+@media (max-width:800px) {
+
+    main {
+        justify-items: center;
+    }
+
+    #conteudo {
+        display: block;
+        margin-left: 0rem;
+    }
+
+    #aboutme {
+        margin-left: 0.5rem;
+    }
+
+    #imagemartista {
+        margin-left: 0;
+        justify-self: center;
+    }
+
+    main h1 {
+        margin-left: 0;
+        text-align: center;
+        width: 30%;
+    }
+
+    #extra {
+        margin-left: 0;
+    }
+
+    #extra ol {
+        padding-left: 0;
+    }
+}

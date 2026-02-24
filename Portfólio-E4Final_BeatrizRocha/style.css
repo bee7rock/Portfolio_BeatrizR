@@ -1,0 +1,101 @@
+body {
+    background-image: url(./Data/darkerbackground.PNG);
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+
+body::selection {
+    background-color: #e49ad5;
+}
+
+h1,
+h2 {
+    font-family: "Lora", serif;
+}
+
+#navum {
+    background-color: #c862b3;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+
+    top: 2rem;
+    justify-self: center;
+    width: 96.5%;
+    padding-top: 0;
+}
+
+#navum li {
+    width: 33%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#linkatual {
+    font-weight: bold;
+    font-size: max(15px, 1.5vw);
+}
+
+#navum ol {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+#navum a {
+    text-decoration: none;
+    color: white;
+    font-size: max(15px, 1.5vw);
+}
+
+#navum a:hover {
+    color: #1b113779;
+}
+
+main {
+    background-color: #ffffff;
+
+    width: 85vw;
+    height: 75vh;
+    position: relative;
+    margin-top: 7.5rem;
+    justify-self: center;
+    vertical-align: middle;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #c862b3 #ffffff;
+
+    padding: 1rem;
+    padding-top: 0;
+}
+
+@media (max-width:1245px) {
+    #navum {
+        width: 95%;
+    }
+}
+
+@media (max-width:800px) {
+    #navum {
+        width: 87%;
+    }
+
+    #linkatual {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width:425px) {
+    #navum {
+        width: 85%;
+    }
+
+    #linkatual {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
